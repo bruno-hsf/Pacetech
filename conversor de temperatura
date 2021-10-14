@@ -1,0 +1,24 @@
+algoritmo "Converter Fahrenheit para Celsius"
+//Calculadora que converte temperatura Fahrenheit em Celsius
+
+var
+temperatura, celsius : real
+
+inicio
+escreval("******** Calculadora que converte Fahrenheit em Celsius ********")
+escreval("")
+escreval("Digite a temperatura a ser convertida")
+leia(temperatura)
+celsius <- (temperatura - 32)/1.8
+se celsius <= 15 entao
+   escreval("Está frio. A temperatura:",temperatura,"ºF equivale a", celsius,"ºC")
+senao
+   se celsius <= 28 entao
+      escreval("Temperatura agradável. A temperatura:",temperatura,"ºF equivale a", celsius,"ºC")
+   senao
+      escreval("Está quente. A temperatura:",temperatura,"ºF equivale a", celsius,"ºC")
+   fimse
+fimse
+escreval("")
+escreval("*****************************************************************")
+fimalgoritmo
